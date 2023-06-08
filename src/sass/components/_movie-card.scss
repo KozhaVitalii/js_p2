@@ -1,0 +1,111 @@
+.card {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+}
+
+.card__item {
+    position: relative;
+    width: 280px;
+    height: 406px;
+    overflow: hidden;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 5px;
+    //    z-index: 10;
+        &:hover {
+            transform: scale(1.03);
+            cursor:pointer;
+            box-shadow: 1px 1px 14px 4px rgba(255, 107, 8, 0.42);
+        }
+        @include tablet {
+        width: 224px;
+        height: 325px;
+        }
+
+        @include desktop {
+        width: calc((100% - 32px) / 3);
+        height: 574px;
+    }
+}
+.card__img {
+        // height: 100%;
+    width: 100%;
+    object-fit: cover;
+       
+}
+.container-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-content:flex-end;
+    justify-content: space-between;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    padding: 12px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 63.48%, rgba(0, 0, 0, 0.9) 92.16%);
+ 
+}
+.card__title {
+    width: 100%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.67;
+        /* or 167% */
+    text-transform: uppercase;
+    color: getColor('primary');
+        @include tablet {
+             line-height: 1.5;
+         }
+                
+        @include desktop {
+            font-weight: 400;
+            font-size: 20px;          
+        }
+}
+
+.card__desc {
+font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    /* or 150% */
+    color: getColor('grey');
+
+    @include tablet {
+        line-height: 1.5;
+        font-size: 10px;
+        }
+     @include desktop {
+        font-size: 18px;                
+    }
+}
+
+.card__rating {
+    // font-style: normal;
+    // font-weight: 500;
+    font-size: 12px;
+    @include tablet {
+            font-size: 10px;
+        }
+    @include desktop {
+            font-size: 18px;
+        }
+    // line-height: 1.5;
+        /* or 150% */
+    // background: linear-gradient(141.22deg, #ffc226 9.4%, #f84119 91.91%);
+
+        // @include desktop {
+        //      font-size: 20px;
+        //  }
+                background: -webkit-gradient(linear,
+                    left top,
+                    left bottom,
+                    from(#f84119),
+                    to(#ffc226));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                
+}

@@ -1,0 +1,33 @@
+{
+  "name": "js_p2",
+  "version": "2.0.0",
+  "description": "",
+  "homepage": "https://KozhaVitalii.github.io/js_p2",
+  "scripts": {
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /js_p2/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KozhaVitalii/js_p2.git"
+  },
+  "keywords": [],
+  "author": "Vitaliy Kozha <kozhavitaliy@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KozhaVitalii/js_p2/issues"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "modern-normalize": "^1.1.0",
+    "tui-pagination": "^3.4.1"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.0",
+    "buffer": "^6.0.3",
+    "parcel": "^2.6.0",
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "posthtml-include": "^1.7.4"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
+}
